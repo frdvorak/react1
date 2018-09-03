@@ -31,15 +31,30 @@ class App extends React.Component {
     handleCopy = (e) => {
         console.log('Try being original for once')
     }
+    handleChange = (e) => {
+        this.setState({
+            name: e.target.value
+        });
+    }
+    handleSubmit = (e) => {
+        e.preventDefault();
+        console.log('Form submitted', this.state.name)
+    }
     render(){
         return (
             <div className='app-component'>
                 <h1>Hey,how are you</h1>   
-                <p>My name is { this.state.name } and I am {this.state.age}</p>    
-                <button onClick={ this.handleClick }>Click Me</button>   
+                <p>My name is { this.state.name } and I am {this.state.age}</p> 
+
+                {/* <button onClick={ this.handleClick }>Click Me</button>   
                 <button onMouseOver={ this.handleMouseOver }>Hover Me</button>   
-                <p onCopy={ this.handleCopy }>What we think we become</p>  
+                <p onCopy={ this.handleCopy }>What we think we become</p>  */}
+                <form onSubmit={this.handleSubmit}>
+                    <input type="text" onChange={this.handleChange}/>
+                    <button>Submit</button>
+                </form>
             </div>
+
         )
     }
 }
