@@ -2,12 +2,19 @@ import React, { Component } from 'react';
 
 class Elements extends Component {
     render(){
-        const { name, color, strength } = this.props;  //destructuring
+        const { elements } = this.props;  //destructuring
+        const elementList = elements.map(element => {
+            return (
+                <div className='element' key={ element.id }>
+                <div>Name: { element.name }</div>
+                <div>Color: { element.color }</div>
+                <div>Strength: { element.strength }</div>
+            </div>
+            )
+        })
         return(
-            <div className='element'>
-                <div>Name: { name }</div>
-                <div>Color: { color }</div>
-                <div>Strength: { strength }</div>
+            <div className="element-list">
+                { elementList }
             </div>
         )
     }
