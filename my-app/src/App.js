@@ -9,7 +9,8 @@ class App extends Component {
       <div className="App">
         <h1>React app!</h1>
         <p>welcome</p>
-        <Elements/>
+        <Elements name="Water" color="blue" strength="medium"/>
+        <Elements name="Fire" color="red" strength="medium"/>
       </div>
     );
   }
