@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import Elements from './Elements';
-import './App.css';
 
 class App extends Component {
   state = {
     elements : [
-      { name: "Water", color: "blue", strenght: "0.5", id: 1},
-      { name: "Fire", color: "red", strenght: "0.5", id: 2},
-      { name: "Earth", color: "green", strenght: "0.5", id: 3}
+      { name: "Water", color: "blue", strength: 5, id: 1},
+      { name: "Fire", color: "red", strength: 4, id: 2},
+      { name: "Earth", color: "green", strength: 6, id: 3}
     ]
   }
   render() {
