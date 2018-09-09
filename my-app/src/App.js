@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Elements from './Elements';
+import AddElement from './AddElement';
 
 class App extends Component {
   state = {
@@ -15,6 +16,7 @@ class App extends Component {
         <h1>React app!</h1>
         <p>welcome</p>
         <Elements elements={this.state.elements} />
+        < AddElement />
         </div>
     );
   }
