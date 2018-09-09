@@ -10,13 +10,21 @@ class App extends Component {
       { name: "Earth", color: "green", strength: 6, id: 3}
     ]
   }
+  addElement = (newlyCreatedElement) => {
+      console.log(newlyCreatedElement);
+      newlyCreatedElement.id = Math.random();
+      let elements = [...this.state.elements, newlyCreatedElement];
+      this.setState({
+        elements: elements
+      })
+  }
   render() {
     return (
       <div className="App">
         <h1>React app!</h1>
         <p>welcome</p>
         <Elements elements={this.state.elements} />
-        < AddElement />
+        < AddElement addElement={this.addElement}/>
         </div>
     );
   }

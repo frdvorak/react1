@@ -13,7 +13,8 @@ class AddElement extends Component {
     }
     onSubmit = (e) => {
         e.preventDefault();
-        console.log(this.state);
+        //console.log(this.state);
+        this.props.addElement(this.state);
     }
     render(){
         return (
