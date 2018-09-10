@@ -18,12 +18,15 @@ class App extends Component {
         elements: elements
       })
   }
+  deleteElement = (id) => {
+      console.log(id);
+  }
   render() {
     return (
       <div className="App">
         <h1>React app!</h1>
         <p>welcome</p>
-        <Elements elements={this.state.elements} />
+        <Elements deleteElement={this.deleteElement} elements={this.state.elements} />
         < AddElement addElement={this.addElement}/>
         </div>
     );
