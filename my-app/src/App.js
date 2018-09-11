@@ -19,7 +19,13 @@ class App extends Component {
       })
   }
   deleteElement = (id) => {
-      console.log(id);
+      //console.log(id);
+      let elements = this.state.elements.filter(element => {
+        return element.id !== id;
+      });
+      this.setState({
+        elements : elements
+      })
   }
   render() {
     return (

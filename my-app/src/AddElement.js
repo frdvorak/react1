@@ -26,7 +26,7 @@ class AddElement extends Component {
                     <label htmlFor='color'>Color:</label>
                     <input type='text' id='color' onChange={this.handleChange} />
 
-                    <label htmlFor='strength'>Strength:</label>
+                    <label htmlFor='strength'>Strength(number):</label>
                     <input type='text' id='strength' onChange={this.handleChange} />
 
                     <button>Submit</button>
