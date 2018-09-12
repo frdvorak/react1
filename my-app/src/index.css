@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: linear-gradient(to bottom right, lightblue 19%, darkblue 20% , white);
+  background: linear-gradient(to bottom right, black, blue 40% , white);
   width: 90vw;
   height: 97vh;
   transition: 5s;
@@ -10,16 +10,19 @@ body {
 }
 @keyframes moveBackground {
   0% {
-       color: blue;
+       color: white;
   }
   50% {
-    color: black;
+    color: orange;
   }
   100% {
-    color: blue;
+    color: white
   }
 }
-h1 {
-  color: green;
-  animation: moveBackground 5s infinite;
+h1, p {
+   animation: moveBackground 5s infinite;
 }
+
+div {
+  color: white;
+ }
