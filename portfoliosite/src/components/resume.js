@@ -9,6 +9,6 @@ class Resume extends Component {
             </div>
          );
     }
-}
+};
  
 export default Resume;

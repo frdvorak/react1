@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { Layout, Header, Drawer, Content, Navigation } from 'react-mdl';
+import Main from './components/Main';
 
 class App extends Component {
   render() {
@@ -24,7 +25,9 @@ class App extends Component {
               </Navigation>
           </Drawer>
           <Content>
-              <div className="page-content" />
+              <div className="page-content" >
+                <Main/>
+              </div>
           </Content>
       </Layout>
     </div>

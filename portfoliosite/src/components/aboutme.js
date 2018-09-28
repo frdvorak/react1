@@ -9,6 +9,6 @@ class Aboutme extends Component {
             </div>
          );
     }
-}
+};
  
 export default Aboutme;
