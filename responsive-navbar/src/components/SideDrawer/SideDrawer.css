@@ -36,3 +36,10 @@
  .side-drawer a:focus {
      color: #fa923f;
  }
+
+
+ @media (min-width: 769px){
+    .side-drawer {
+        display: none;
+    }
+}
