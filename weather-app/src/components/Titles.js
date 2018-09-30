@@ -1,15 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Title extends Component {
-    state = {  }
-    render() { 
-        return ( 
-            <div>
+const Weather = () => {
+    return (
+        <div>
                 <h1>Weather finder</h1>
                 <p>Find out temperature, conditions and more..</p>
-            </div>
-         );
-    }
+        </div>
+    )
 }
- 
-export default Title;
+
+export default Weather;
