@@ -3,6 +3,7 @@ import './App.css';
 import Titles from './components/Titles';
 import Form from './components/Form';
 import Weather from './components/Weather';
+import CityTile from './components/CityTile';
 
 const API_KEY = '4f6f72308473314b6727d9fb36b07e22';
 
@@ -62,7 +63,16 @@ class App extends Component {
           description={this.state.description}
           error={this.state.error}
         />
-      
+        <CityTile />
+        <CityTile />
+        <CityTile />
+        <CityTile />
+        <CityTile />
+        <CityTile />
+        <CityTile />
+        <CityTile />
+        <CityTile />
+
       </div>
     );
   }
