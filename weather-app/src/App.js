@@ -63,16 +63,17 @@ class App extends Component {
           description={this.state.description}
           error={this.state.error}
         />
-        <CityTile />
-        <CityTile />
-        <CityTile />
-        <CityTile />
-        <CityTile />
-        <CityTile />
-        <CityTile />
-        <CityTile />
-        <CityTile />
-
+        <div className='container row'>
+          <CityTile />
+          <CityTile />
+          <CityTile />
+          <CityTile />
+          <CityTile />
+          <CityTile />
+          <CityTile />
+          <CityTile />
+          <CityTile />
+        </div>
       </div>
     );
   }
