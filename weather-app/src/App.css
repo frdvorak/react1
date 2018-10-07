@@ -29,6 +29,32 @@
 
 /** CityTile styles *****************************/
 
+.row {
+  position: absolute;
+  width: 90%;
+  border: 1px solid black;
+  position: absolute;
+  left: 51%;
+  transform: translate(-50%, 0);
+  margin-top: 20px;
+}
+
 .cityTile {
-  background: gray;
+  //outline: 1px solid rgba(0,0,0,0);
+}
+
+.cityTile .inner{
+  display: block;
+  //background: gray;
+  min-height: 150px;
+  //border-radius: 10px;
+  background-image: url(paris.svg);
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  
+}
+.cityTile:hover {
+  //outline: 1px solid rgba(0,0,0,1);
+  background: lightgray;
 }
