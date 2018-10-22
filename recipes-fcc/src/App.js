@@ -1,24 +1,36 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Accordion from 'react-bootstrap/lib/Accordion';
+import Panel from 'react-bootstrap/lib/Panel';
+import Button from 'react-bootstrap/lib/Button';
+import ButtonToolbar from 'react-bootstrap/lib/ButtonToolbar';
+import Modal from 'react-bootstrap/lib/Modal';
+import FormGroup from 'react-bootstrap/lib/FormGroup';
+import ControlLabel from 'react-bootstrap/lib/ControlLabel';
+import FormControl from 'react-bootstrap/lib/FormControl'
+import './App.css';
+
+
 import './App.css';
 
 class App extends Component {
+
+  state = {
+    recipes: [
+      {recipeName: 'Saag Aloo', ingredients: ['spinach', 'potatoes', 'spices']},
+      {recipeName: 'Quinoa Chips', ingredients: ['quinoa', 'oil']},
+      {recipeName: 'Potato Pancakes', ingredients: ['potatoes', 'oil', 'salt', 'pepper', 'marjoram', 'garlic']},
+    ]
+  }
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          
+          <Accordion>
+            
+          </Accordion>
+         
         </header>
       </div>
     );
