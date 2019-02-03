@@ -19,6 +19,13 @@ class App extends Component {
     counters[index].value++;
     this.setState({ counters });
   }
+  handleDecrement = (counter) => {
+    const counters = [...this.state.counters];
+    const index = counters.indexOf(counter);
+    counters[index] = { ...counter }; // spread operator will clone counter object
+    counters[index].value--
+    this.setState({ counters });
+  }
   handleDelete = (counterId) => {
     //console.log('Event Handler Called', counterId);
     const counters = this.state.counters.filter(c => c.id !== counterId);
@@ -40,6 +47,7 @@ class App extends Component {
             counters={this.state.counters}
             onReset={this.handleReset}
             onIncrement={this.handleIncrement}
+            onDecrement={this.handleDecrement}
             onDelete={this.handleDelete}
 
           />
