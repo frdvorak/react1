@@ -9,9 +9,6 @@ import ControlLabel from 'react-bootstrap/lib/ControlLabel';
 import FormControl from 'react-bootstrap/lib/FormControl'
 import './App.css';
 
-
-import './App.css';
-
 class App extends Component {
 
   state = {
@@ -23,12 +20,17 @@ class App extends Component {
   }
 
   render() {
+    const {recipes} = this.state;
     return (
       <div className="App">
         <header className="App-header">
           
           <Accordion>
-            
+            {recipes.map((recipe, index)=>(
+              <Panel header={recipe.recipeName} eventKey={index} key={index}>
+
+              </Panel>
+            ))}
           </Accordion>
          
         </header>
